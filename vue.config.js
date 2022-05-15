@@ -12,5 +12,8 @@ module.exports = {
       maskIcon: 'img/icons/android-icon-maskable-192x192.png',
       msTileImage: 'img/icons/mstile-150x150.png'
     }
-  }
+  },
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/test-task-vue/'
+    : '/'
 }
